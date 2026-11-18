@@ -39,8 +39,8 @@
         \IfFileExists{alphabeta.sty}{
               \usepackage{alphabeta}
           }{
-              \usepackage[mathletters]{ucs}
-              \usepackage[utf8x]{inputenc}
+              \usepackage[utf8]{inputenc}
+              \DeclareUnicodeCharacter{03B2}{\ensuremath{\beta}}
           }
     \else
         \usepackage{fontspec}

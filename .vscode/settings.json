@@ -1,0 +1,27 @@
+{
+    "latex-workshop.latex.recipe.default": "first",
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "Build PDF (automatic encoding fix)",
+            "tools": ["latexmk-project"]
+        }
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk-project",
+            "command": "latexmk",
+            "args": [
+                "-norc",
+                "-r",
+                "%DIR%/.latexmkrc",
+                "-cd",
+                "-pdf",
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ],
+            "cwd": "%DIR%"
+        }
+    ]
+}
